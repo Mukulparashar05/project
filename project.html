@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmer's Market Link</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 5px 0 0;
+        }
+
+        /* Navigation bar styling */
+        nav {
+            background-color: #0c0101;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: rgb(234, 228, 228);
+
+            text-align: center;
+
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #dddddd;
+            color: black;
+        }
+
+        /* Container for main content */
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        /* Card styling for each section */
+        .card {
+            background-color: white;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            color: #4CAF50;
+        }
+
+        /* Button styling */
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        /* Columns layout */
+        .columns {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .columns div {
+            flex: 1;
+            margin: 10px;
+            min-width: 250px;
+        }
+
+        /* Form styling */
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="email"],
+        form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer styling */
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            width: 100%;
+            box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 768px) {
+            nav a {
+                float: none;
+                width: 100%;
+            }
+
+            .columns {
+                flex-direction: column;
+            }
+
+            .columns div {
+                margin: 10px 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            form input[type="submit"],
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Farmer's Market Link</h1>
+        <p>Connecting Farmers, Suppliers, and Buyers Directly to the Market</p>
+    </header>
+
+    <nav>
+        <a href="#farmers">Farmers</a>
+        <a href="#suppliers">Suppliers</a>
+        <a href="#supplier-to-buyer">Supplier to Buyer</a>
+        <a href="#buyers">Buyers</a>
+        <a href="#market-info">Market Info</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <div class="container">
+        <!-- Farmers Section -->
+        <section id="farmers">
+            <h2>Farmers</h2>
+            <div class="card">
+                <p>If you're a farmer, this platform allows you to showcase your produce and connect directly with
+                    buyers and suppliers. Upload your product details, and potential buyers and suppliers can reach out
+                    to you.</p>
+                <a href="#" class="button">List Your Produce</a>
+            </div>
+        </section>
+
+        <!-- Suppliers Section -->
+        <section id="suppliers">
+            <h2>Suppliers</h2>
+            <div class="card">
+                <p>Suppliers play a crucial role in bridging the gap between farmers and buyers. Register as a supplier
+                    to manage and distribute agricultural products efficiently.</p>
+                <a href="#" class="button">Register as Supplier</a>
+            </div>
+        </section>
+
+        <!-- Supplier to Buyer Section -->
+        <section id="supplier-to-buyer">
+            <h2>Supplier to Buyer</h2>
+            <div class="card">
+                <p>Suppliers can connect directly with buyers to fulfill bulk orders, ensuring timely delivery and
+                    quality products. Manage your buyer relationships effectively through our platform.</p>
+                <a href="#" class="button">Connect with Buyers</a>
+            </div>
+        </section>
+
+        <!-- Buyers Section -->
+        <section id="buyers">
+            <h2>Buyers</h2>
+            <div class="card">
+                <p>Looking for fresh produce? Browse through the listings from farmers and suppliers in your area. Buy
+                    directly from the source and support local agriculture.</p>
+                <a href="#" class="button">Browse Produce</a>
+            </div>
+        </section>
+
+        <!-- Market Info Section -->
+        <section id="market-info">
+            <h2>Market Information</h2>
+            <div class="card">
+                <div class="columns">
+                    <div>
+                        <h3>Local Markets</h3>
+                        <p>Find information about local markets, opening hours, and the types of products available.</p>
+                        <a href="#" class="button">View Local Markets</a>
+                    </div>
+                    <div>
+                        <h3>Market Trends</h3>
+                        <p>Stay updated with the latest market trends, prices, and demand for different crops and
+                            produce.</p>
+                        <a href="#" class="button">Check Market Trends</a>
+                    </div>
+                    <div>
+                        <h3>Logistics</h3>
+                        <p>Learn about transportation and storage solutions to ensure your products reach the market
+                            fresh.</p>
+                        <a href="#" class="button">Learn About Logistics</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <div class="card">
+                <p>If you have any questions, feel free to reach out to us. We're here to help farmers, suppliers, and
+                    buyers connect efficiently.</p>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <input type="submit" value="Submit" class="button">
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Farmer's Market Link. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
